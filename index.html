@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradise Resort</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <h2>Paradise Resort</h2>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#rooms">Rooms</a>
+            <a href="#about">About</a>
+            <a href="#booking">Book Now</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+            <h1>Welcome to Paradise Resort</h1>
+
+            <p>
+                Relax, unwind, and enjoy a beautiful tropical getaway.
+            </p>
+
+            <a href="#booking" class="book-btn">
+                Book Now
+            </a>
+        </div>
+
+    </section>
+
+    <!-- ROOMS -->
+    <section id="rooms" class="rooms">
+
+        <h2>Our Rooms</h2>
+
+        <div class="room-container">
+
+            <div class="room-card">
+                <h3>Deluxe Suite</h3>
+                <p>Comfortable room with modern amenities.</p>
+
+                <a href="#booking" class="book-btn">
+                    Book Now
+                </a>
+            </div>
+
+            <div class="room-card">
+                <h3>Ocean View Villa</h3>
+                <p>Enjoy a relaxing view of the ocean.</p>
+
+                <a href="#booking" class="book-btn">
+                    Book Now
+                </a>
+            </div>
+
+            <div class="room-card">
+                <h3>Family Suite</h3>
+                <p>Perfect for families and groups.</p>
+
+                <a href="#booking" class="book-btn">
+                    Book Now
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- BOOKING FORM -->
+    <section id="booking" class="booking-section">
+
+        <h2>Book Your Stay</h2>
+
+        <p>Fill out the form below to check availability.</p>
+
+        <form id="bookingForm">
+
+            <!-- GUEST DETAILS -->
+            <h3>Guest Details</h3>
+
+            <label for="fullName">Full Name</label>
+            <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                required
+            >
+
+            <label for="email">Email Address</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required
+            >
+
+            <label for="phone">Phone Number</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+            >
+
+            <!-- RESERVATION DETAILS -->
+            <h3>Reservation Details</h3>
+
+            <label for="checkin">Check-in Date</label>
+            <input
+                type="date"
+                id="checkin"
+                name="checkin"
+                required
+            >
+
+            <label for="checkout">Check-out Date</label>
+            <input
+                type="date"
+                id="checkout"
+                name="checkout"
+                required
+            >
+
+            <label for="room">Room Selection</label>
+
+            <select id="room" name="room" required>
+
+                <option value="">Select a room</option>
+
+                <option value="Deluxe Suite">
+                    Deluxe Suite
+                </option>
+
+                <option value="Ocean View Villa">
+                    Ocean View Villa
+                </option>
+
+                <option value="Standard Room">
+                    Standard Room
+                </option>
+
+                <option value="Family Suite">
+                    Family Suite
+                </option>
+
+            </select>
+
+            <label for="guests">Number of Guests</label>
+
+            <input
+                type="number"
+                id="guests"
+                name="guests"
+                min="1"
+                required
+            >
+
+            <!-- SPECIAL REQUEST -->
+            <label for="notes">Special Requests / Notes</label>
+
+            <textarea
+                id="notes"
+                name="notes"
+                rows="4"
+                placeholder="Optional"
+            ></textarea>
+
+            <!-- SUBMIT -->
+            <button type="submit">
+                Check Availability
+            </button>
+
+            <!-- SUCCESS MESSAGE -->
+            <div id="successMessage" class="success-message">
+                Booking submitted successfully!
+            </div>
+
+        </form>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Paradise Resort</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
